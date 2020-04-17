@@ -1,0 +1,52 @@
+<div class="row">
+    <div>
+        <app-header></app-header>
+    </div>
+
+    <div class="form-wrapper">
+        <h6>Please Update Profile as Reply</h6>
+        <form [formGroup]="updateForm" (ngSubmit)="onSubmit(updateForm.value)" #myForm="ngForm" class="mainForm form-group">
+            <div class="form-group">
+                <label>
+                    First Name:
+                </label>
+                <input type="text" formControlName="first_name" class="form-control" placeholder="Enter First Name" [ngModel]="firstName"/>
+                <div *ngIf="(updateForm.controls.first_name.touched && !updateForm.controls.first_name.valid)"
+                    class=" alert alert-danger">
+                    First Name is required
+                </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    Last Name:
+                </label>
+                <input type="text" formControlName="last_name" class="form-control" placeholder="Enter Last Name" [ngModel]="lastName"/>
+                <div *ngIf="(updateForm.controls.last_name.touched && !updateForm.controls.last_name.valid)"
+                class=" alert alert-danger">
+                Last Name is required
+            </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    Email:
+                </label>
+                <input type="email" formControlName="email" class="form-control" placeholder="Enter Email" [ngModel]="email"/>
+                <div *ngIf="(updateForm.controls.email.touched && !updateForm.controls.email.valid)"
+                class=" alert alert-danger">
+                Email is required
+            </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    Address:
+                </label>
+                <input type="text" formControlName="address" class="form-control" placeholder="Enter Address" [ngModel]="address"/>
+                <div *ngIf="(updateForm.controls.address.touched && !updateForm.controls.address.valid)"
+                class=" alert alert-danger">
+                Address is required
+            </div>
+            </div>
+            <button class="btn btn-primary" type="submit" [disabled]="!myForm.form.valid">Submit</button>
+        </form>
+    </div>
+</div>
