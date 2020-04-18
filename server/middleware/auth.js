@@ -15,7 +15,8 @@ const jwtSecret = process.env.JWT_SECRET || config.JWT.JWT_SECRET;
 const jwtAlgorithm = process.env.JWT_ALGORITHM || config.JWT.JWT_ALGORITHM;
 const jwtExpiresIn = process.env.JWT_EXPIRES_IN || config.JWT.JWT_EXPIRES_IN;
 
-const authWithJwt = async (req, res, next) => {
+const authWithJwt = async (req, res, next) 
+=> {
     try {
         let email = req.body.email;
         let password = req.body.password;
