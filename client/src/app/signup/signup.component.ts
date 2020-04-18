@@ -33,7 +33,7 @@ export class SignupComponent implements OnInit {
   myPostObserver = {
     next: (data) => {
       this.onSuccessToaster("Registered Successfully. Please Check Inbox");
-        this.router.navigate(['/']);
+      // Make Blank Fields after registration Using ngModel 1 way binding
     },
     error: (err) => {
       console.log("error", err);
