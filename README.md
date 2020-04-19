@@ -1,7 +1,6 @@
-# ams
-Automatic Mail System
+# Automatic Mail System
 
-1. Install Mongo DB as I have used the same. Make changes in server regarding DB and configuration changes, go to server->configuration->config.js
+1. Install Mongo DB. Make changes in server regarding DB and configuration changes, go to server->configuration->config.js
 
 2. Start the server by using commands cd server first and then npm run server. 
 
