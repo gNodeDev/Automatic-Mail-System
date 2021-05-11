@@ -15,7 +15,7 @@
     "express-joi-validator": "^2.0.1",
     "http-errors": "~1.6.3",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "md5": "^2.2.1",
     "mongoose": "^5.9.3",
     "morgan": "~1.9.1",
